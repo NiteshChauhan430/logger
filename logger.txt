@@ -1,0 +1,18 @@
+Spring Boot uses Apache Commons logging for all internal logging. Spring Boot’s default configurations provides a support for the use of Java Util Logging, Log4j2, and Logback. Using these, we can configure the console logging as well as file logging.
+
+If you are using Spring Boot Starters, Logback will provide a good support for logging. Besides, Logback also provides a use of good support for Common Logging, Util Logging, Log4J, and SLF4J.
+
+Date and Time that gives the date and time of the log
+
+Log Format-
+Log level shows INFO, ERROR or WARN
+Process ID
+The --- which is a separator
+Thread name is enclosed within the square brackets []
+Logger Name that shows the Source class name
+The Log message
+
+Asynchronous Logging. ... 
+Basically only for logging we are creating JSON of the data available and then logging into Log files. 
+This is business requirement to log data in JSON format . Now creating JSON from the data available and then
+logging to FILE takes lot of time and impacts the original request return time
