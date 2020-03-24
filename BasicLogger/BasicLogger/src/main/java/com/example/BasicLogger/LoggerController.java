@@ -11,11 +11,9 @@ public class LoggerController{
    public String printHello(ModelMap model) {
       LOGGER.info("printHello started.");
 
-      //logs debug message
       if(LOGGER.isDebugEnabled()){
          LOGGER.debug("Inside:  printHello");
       }
-      //logs exception
       LOGGER.error("Logging a sample exception", new Exception("Testing"));
 
       model.addAttribute("message", "Hello Spring Framework!");
